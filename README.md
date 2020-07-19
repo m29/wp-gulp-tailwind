@@ -6,6 +6,7 @@ Use the following commands to download and install the theme:
 
 ```bash
 git clone git@github.com:m29/wp-gulp-tailwind.git
+cd wp-gulp-tailwind
 ```
 
 ## Usage
