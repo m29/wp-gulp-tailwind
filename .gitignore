@@ -1,5 +1,6 @@
 logs
 *.log
+package-lock.json
 npm-debug.log
 npm-error.log
 yarn-debug.log
