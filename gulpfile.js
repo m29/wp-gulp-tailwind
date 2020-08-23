@@ -33,7 +33,8 @@ gulp.task('css', function() {
                 'strong',
                 'blockquote',
             ],
-            whitelistPatterns: purgecssWordpress.whitelistPatterns
+            whitelistPatterns: purgecssWordpress.whitelistPatterns,
+            defaultExtractor: content => content.match(/[\w-/:]+(?<!:)/g) || []
         }))
         .pipe(minify())
         .pipe(rename({ extname: '.min.css' }))
